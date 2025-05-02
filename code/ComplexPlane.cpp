@@ -69,8 +69,8 @@ void ComplexPlane::loadText(Text& text)
 
     std::stringstream output;
     output << "Mandlebrot Set" << endl
-        << "Center: " << '(' << m_plane_center.x << ', ' << m_plane_center.y << ')' << endl
-        << "Cursor: " << '(' << m_mouseLocation.x << ', ' << m_mouseLocation.y << ')' << endl
+        << "Center: " << '(' << m_plane_center.x << ", " << m_plane_center.y << ')' << endl
+        << "Cursor: " << '(' << m_mouseLocation.x << ", " << m_mouseLocation.y << ')' << endl
         << "Left-click to Zoom in" << endl 
         << "Right-click to Zoom out" << endl;
     text.setString(output.str());
