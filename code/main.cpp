@@ -2,7 +2,6 @@
 #include "ComplexPlane.h"
 
 int main()
-
 {
     Event event;
     int pixelWidth = VideoMode::getDesktopMode().width;
@@ -16,7 +15,6 @@ int main()
     hud.setCharacterSize(20);
     hud.setFillColor(Color::White);
     while (window.isOpen())
-
     {
         while (window.pollEvent(event))
         {
@@ -53,8 +51,6 @@ int main()
                 cout << "Escape key used to close program" << endl;
                 window.close();
             }
-
-
         }
         mb.updateRender();
         mb.loadText(hud);
@@ -63,6 +59,4 @@ int main()
         window.draw(hud);
         window.display();
     }
-
-
 }
